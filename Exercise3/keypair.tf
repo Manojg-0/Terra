@@ -1,0 +1,4 @@
+resource "aws_key_pair" "dov-key" {
+  key_name   = "dov-key"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC1yu0fW2BK6nOxZImOh/7nNMlpXpjlUdp2Yu+/KvvczY1ERChL3ugtpg6+WqCeFE8M9xKVBvdqCOSUz8E6zEpTd4SVLmSNRFwp7eaRiYr3zJ8YJ9L7lcjwFS15DfEHPnIEqwYvqf60s7OTvqZE/VophbMvB9gKkJVwi2ncFVjF+Vmkp/FLNrzi3rMN4EVEgDR8oGjqcbdtrjyjWzC2/l4aMXKcVDO/gD6GzJXdEX+fUwwORZ86ztoc5Dnyg9t2svTw9rGHN0vHoMdRTfnYJJtHS6E6U7+G7oIWiDUDDc6u/Gk5cFhugTnV+OeaMR92R570QE/BL1lUYqaVr3apZ2TN8HiHmd9OP0BrZNygfBNRMvWPE8vu3p0xNwuLVMVdb4CGvCeafOf+LVSwB1HOzQlPQkgff/9BS73e6Vy2dEe31nxrvR2sro+nVou2iI20JM0UfUAyLL974DohyrxhPydyflL5G7jU5tFt7I/L+gZnjD/7oSUX0plU9soP37q8fM0= manoj@INFINITY"
+}

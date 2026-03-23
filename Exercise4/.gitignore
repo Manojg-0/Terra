@@ -1,0 +1,25 @@
+# Terraform files to ignore
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Sensitive files
+*.tfvars
+*.tfvars.json
+
+# CLI config
+.terraform.lock.hcl
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+
+
+# SSH keys
+dovekey
+dovekey.pub
+*.pem
+*.key
+id_rsa

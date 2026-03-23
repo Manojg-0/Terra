@@ -1,0 +1,22 @@
+resource "aws_instance" "web" {
+  ami                    = var.ami_id[var.region]
+  instance_type          = "t3.micro"
+  key_name               = "dov-key"
+  vpc_security_group_ids = [aws_security_group.dove-sg.id]
+  availability_zone      = var.zone
+
+
+  tags = {
+    Name    = "Dove-Web-Server"
+    Project = "Dove"
+  }
+  provisioner "local-exec" {
+  command = "echo ${self.public_ip} > web_public_ip.txt"
+}
+
+}
+resource "aws_ec2_instance_state" "test" {
+  instance_id = aws_instance.web.id
+  state       = "running"
+}
+
